@@ -1,64 +1,324 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Laravel Inertia ReactJS Blog System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📋 Deskripsi Sistem
 
-## About Laravel
+Sistem Blog ini adalah aplikasi web modern yang dibangun menggunakan kombinasi **Laravel** sebagai backend framework dan **ReactJS** dengan **Inertia.js** sebagai frontend. Sistem ini memungkinkan pengguna untuk mengelola konten blog dengan antarmuka yang responsif dan user-friendly.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🎯 Tujuan Sistem
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   Menyediakan platform blog yang mudah digunakan
+-   Mengelola konten post dengan operasi CRUD lengkap
+-   Memberikan pengalaman pengguna yang modern dengan SPA (Single Page Application)
+-   Menggunakan teknologi terbaru untuk performa optimal
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Teknologi yang Digunakan
 
-## Learning Laravel
+### Backend (Laravel 9)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   **PHP 8.0.2+** - Bahasa pemrograman utama
+-   **Laravel Framework 9.19** - Framework PHP modern
+-   **Laravel Sanctum 2.14.1** - Authentication system
+-   **Inertia Laravel 0.6.3** - Server-side adapter untuk Inertia.js
+-   **MySQL/PostgreSQL** - Database management system
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Frontend (ReactJS)
 
-## Laravel Sponsors
+-   **React 17.0.2** - JavaScript library untuk UI
+-   **React DOM 17.0.2** - React rendering untuk web
+-   **Inertia.js 0.11.0** - Modern monolith approach
+-   **Inertia React 0.8.1** - React adapter untuk Inertia.js
+-   **Inertia Progress 0.2.7** - Progress bar untuk navigasi
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Development Tools
 
-### Premium Partners
+-   **Vite 3.0.0** - Build tool dan development server
+-   **Laravel Vite Plugin 0.5.0** - Plugin untuk integrasi Vite dengan Laravel
+-   **Axios 0.27** - HTTP client untuk API requests
+-   **Lodash 4.17.19** - Utility library
+-   **PostCSS 8.1.14** - CSS processing tool
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## ✨ Fitur yang Tersedia
 
-## Contributing
+### 🎨 Manajemen Post (CRUD)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+-   **Create** - Membuat post baru dengan form yang user-friendly
+-   **Read** - Menampilkan daftar semua post dengan tampilan yang rapi
+-   **Update** - Mengedit post yang sudah ada
+-   **Delete** - Menghapus post dengan konfirmasi
 
-## Code of Conduct
+### 🔧 Fitur Teknis
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+-   **Single Page Application (SPA)** - Navigasi tanpa reload halaman
+-   **Form Validation** - Validasi input di sisi server dan client
+-   **Flash Messages** - Notifikasi sukses/error yang informatif
+-   **Responsive Design** - Tampilan yang optimal di berbagai perangkat
+-   **Progress Bar** - Indikator loading saat navigasi
 
-## Security Vulnerabilities
+### 📊 Struktur Database
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+-   **Posts Table** - Menyimpan data post (id, title, content, timestamps)
+-   **Users Table** - Sistem autentikasi (siap untuk pengembangan)
+-   **Migration System** - Database versioning yang terstruktur
 
-## License
+## 🚀 Cara Instalasi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Prerequisites
+
+Sebelum menginstal, pastikan sistem Anda memiliki:
+
+-   **PHP 8.0.2** atau lebih tinggi
+-   **Composer** - Package manager untuk PHP
+-   **Node.js 16+** dan **npm** - Package manager untuk JavaScript
+-   **MySQL/PostgreSQL** - Database server
+-   **Git** - Version control system
+
+### Langkah-langkah Instalasi
+
+#### 1. Clone Repository
+
+```bash
+git clone <repository-url>
+cd laravel-inertia-reactjs
+```
+
+#### 2. Install Dependencies PHP
+
+```bash
+composer install
+```
+
+#### 3. Install Dependencies JavaScript
+
+```bash
+npm install
+```
+
+#### 4. Setup Environment
+
+```bash
+# Copy file environment
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+```
+
+#### 5. Konfigurasi Database
+
+Edit file `.env` dan sesuaikan konfigurasi database:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nama_database_anda
+DB_USERNAME=username_database
+DB_PASSWORD=password_database
+```
+
+#### 6. Jalankan Migration
+
+```bash
+php artisan migrate
+```
+
+#### 7. Build Assets (Development)
+
+```bash
+# Development mode
+npm run dev
+
+# Production build
+npm run build
+```
+
+#### 8. Jalankan Server
+
+```bash
+# Laravel development server
+php artisan serve
+
+# Atau menggunakan Vite untuk development
+npm run dev
+```
+
+### 🔧 Konfigurasi Tambahan
+
+#### Virtual Host (Opsional)
+
+Untuk production, disarankan menggunakan web server seperti Apache atau Nginx:
+
+**Apache (.htaccess sudah tersedia)**
+
+```apache
+<VirtualHost *:80>
+    ServerName blog.local
+    DocumentRoot /path/to/laravel-inertia-reactjs/public
+
+    <Directory /path/to/laravel-inertia-reactjs/public>
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
+
+**Nginx**
+
+```nginx
+server {
+    listen 80;
+    server_name blog.local;
+    root /path/to/laravel-inertia-reactjs/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.0-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+```
+
+## 📁 Struktur Project
+
+```
+laravel-inertia-reactjs/
+├── app/
+│   ├── Http/Controllers/
+│   │   └── PostController.php      # Controller untuk manajemen post
+│   └── Models/
+│       └── Post.php               # Model Post
+├── database/
+│   └── migrations/
+│       └── create_posts_table.php # Migration untuk tabel posts
+├── resources/
+│   └── js/
+│       ├── Pages/
+│       │   └── Posts/
+│       │       ├── Index.jsx      # Halaman daftar post
+│       │       ├── Create.jsx     # Halaman buat post
+│       │       └── Edit.jsx       # Halaman edit post
+│       ├── Layouts/               # Layout components
+│       └── app.jsx                # Entry point React
+├── routes/
+│   └── web.php                    # Definisi routes
+├── public/                        # Public assets
+├── storage/                       # File storage
+└── vendor/                        # Composer dependencies
+```
+
+## 🎯 Cara Penggunaan
+
+### Mengakses Aplikasi
+
+1. Buka browser dan akses `http://localhost:8000/posts`
+2. Anda akan melihat halaman daftar post
+
+### Menambah Post Baru
+
+1. Klik tombol "Create Post" atau akses `/posts/create`
+2. Isi form dengan judul dan konten
+3. Klik "Save" untuk menyimpan
+
+### Mengedit Post
+
+1. Klik tombol "Edit" pada post yang ingin diedit
+2. Modifikasi judul atau konten
+3. Klik "Update" untuk menyimpan perubahan
+
+### Menghapus Post
+
+1. Klik tombol "Delete" pada post yang ingin dihapus
+2. Konfirmasi penghapusan
+
+## 🔧 Development
+
+### Menjalankan Development Server
+
+```bash
+# Terminal 1 - Laravel server
+php artisan serve
+
+# Terminal 2 - Vite development server
+npm run dev
+```
+
+### Menjalankan Tests
+
+```bash
+php artisan test
+```
+
+### Code Formatting
+
+```bash
+# Menggunakan Laravel Pint
+./vendor/bin/pint
+```
+
+## 🚀 Deployment
+
+### Production Build
+
+```bash
+# Install dependencies
+composer install --optimize-autoloader --no-dev
+npm install
+npm run build
+
+# Set environment
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+```
+
+### Environment Variables
+
+Pastikan semua environment variables sudah dikonfigurasi dengan benar:
+
+-   `APP_ENV=production`
+-   `APP_DEBUG=false`
+-   `APP_URL=https://your-domain.com`
+
+## 🤝 Kontribusi
+
+1. Fork repository
+2. Buat branch fitur baru (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buat Pull Request
+
+## 📝 License
+
+Project ini menggunakan license MIT. Lihat file `LICENSE` untuk informasi lebih lanjut.
+
+## 📞 Support
+
+Jika Anda mengalami masalah atau memiliki pertanyaan, silakan:
+
+-   Buat issue di repository
+-   Hubungi tim development
+-   Konsultasikan dokumentasi Laravel dan Inertia.js
+
+---
+
+**Dibuat dengan ❤️ menggunakan Laravel, Inertia.js, dan ReactJS**
