@@ -1,12 +1,10 @@
-# Laravel Inertia ReactJS Blog System
+# Laravel Inertia ReactJS - CRUD
 
 ## 📋 Deskripsi Sistem
-
-Sistem Blog ini adalah aplikasi web modern yang dibangun menggunakan kombinasi **Laravel** sebagai backend framework dan **ReactJS** dengan **Inertia.js** sebagai frontend. Sistem ini memungkinkan pengguna untuk mengelola konten blog dengan antarmuka yang responsif dan user-friendly.
+Ini adalah penerapan simpel aplikasi (CRUD) web modern yang dibangun menggunakan kombinasi **Laravel** sebagai backend framework dan **ReactJS** dengan **Inertia.js** sebagai frontend.
 
 ### 🎯 Tujuan Sistem
 
--   Menyediakan platform blog yang mudah digunakan
 -   Mengelola konten post dengan operasi CRUD lengkap
 -   Memberikan pengalaman pengguna yang modern dengan SPA (Single Page Application)
 -   Menggunakan teknologi terbaru untuk performa optimal
@@ -41,24 +39,17 @@ Sistem Blog ini adalah aplikasi web modern yang dibangun menggunakan kombinasi *
 
 ### 🎨 Manajemen Post (CRUD)
 
--   **Create** - Membuat post baru dengan form yang user-friendly
--   **Read** - Menampilkan daftar semua post dengan tampilan yang rapi
+-   **Create** - Membuat post baru
+-   **Read** - Menampilkan daftar semua post
 -   **Update** - Mengedit post yang sudah ada
--   **Delete** - Menghapus post dengan konfirmasi
-
+-   **Delete** - Menghapus post
+  
 ### 🔧 Fitur Teknis
 
 -   **Single Page Application (SPA)** - Navigasi tanpa reload halaman
 -   **Form Validation** - Validasi input di sisi server dan client
 -   **Flash Messages** - Notifikasi sukses/error yang informatif
 -   **Responsive Design** - Tampilan yang optimal di berbagai perangkat
--   **Progress Bar** - Indikator loading saat navigasi
-
-### 📊 Struktur Database
-
--   **Posts Table** - Menyimpan data post (id, title, content, timestamps)
--   **Users Table** - Sistem autentikasi (siap untuk pengembangan)
--   **Migration System** - Database versioning yang terstruktur
 
 ## 🚀 Cara Instalasi
 
@@ -111,7 +102,7 @@ Edit file `.env` dan sesuaikan konfigurasi database:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=nama_database_anda
+DB_DATABASE=nama_database
 DB_USERNAME=username_database
 DB_PASSWORD=password_database
 ```
@@ -233,25 +224,6 @@ laravel-inertia-reactjs/
 1. Buka browser dan akses `http://localhost:8000/posts`
 2. Anda akan melihat halaman daftar post
 
-### Menambah Post Baru
-
-1. Klik tombol "Create Post" atau akses `/posts/create`
-2. Isi form dengan judul dan konten
-3. Klik "Save" untuk menyimpan
-
-### Mengedit Post
-
-1. Klik tombol "Edit" pada post yang ingin diedit
-2. Modifikasi judul atau konten
-3. Klik "Update" untuk menyimpan perubahan
-
-### Menghapus Post
-
-1. Klik tombol "Delete" pada post yang ingin dihapus
-2. Konfirmasi penghapusan
-
-## 🔧 Development
-
 ### Menjalankan Development Server
 
 ```bash
@@ -260,19 +232,6 @@ php artisan serve
 
 # Terminal 2 - Vite development server
 npm run dev
-```
-
-### Menjalankan Tests
-
-```bash
-php artisan test
-```
-
-### Code Formatting
-
-```bash
-# Menggunakan Laravel Pint
-./vendor/bin/pint
 ```
 
 ## 🚀 Deployment
@@ -299,26 +258,8 @@ Pastikan semua environment variables sudah dikonfigurasi dengan benar:
 -   `APP_DEBUG=false`
 -   `APP_URL=https://your-domain.com`
 
-## 🤝 Kontribusi
-
-1. Fork repository
-2. Buat branch fitur baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
 ## 📝 License
 
 Project ini menggunakan license MIT. Lihat file `LICENSE` untuk informasi lebih lanjut.
-
-## 📞 Support
-
-Jika Anda mengalami masalah atau memiliki pertanyaan, silakan:
-
--   Buat issue di repository
--   Hubungi tim development
--   Konsultasikan dokumentasi Laravel dan Inertia.js
-
----
 
 **Dibuat dengan ❤️ menggunakan Laravel, Inertia.js, dan ReactJS**
