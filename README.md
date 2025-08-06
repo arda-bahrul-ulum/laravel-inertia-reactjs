@@ -261,5 +261,3 @@ Pastikan semua environment variables sudah dikonfigurasi dengan benar:
 ## 📝 License
 
 Project ini menggunakan license MIT. Lihat file `LICENSE` untuk informasi lebih lanjut.
-
-**Dibuat dengan ❤️ menggunakan Laravel, Inertia.js, dan ReactJS**
